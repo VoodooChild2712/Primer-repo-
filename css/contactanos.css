@@ -1,0 +1,162 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 0rem;
+}
+.container-fluid{
+    --bs-gutter-x: 0rem;
+}
+
+.main__contactanos{
+    padding-top: 65px;
+}
+
+.main__contactanos-titulo{
+    width: 100%;
+    height: 150px;
+    background: url(../img/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__contactanos h2{
+   font-size: 30px;
+   color: white;
+   font-weight: bolder;
+   text-transform: uppercase;
+   
+}
+
+
+
+.main__contactanos--ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 350px;
+}
+
+.ubicacion--titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion--titulo i{
+    font-size: 50px;
+    color: red;
+    display: inline;
+}
+
+
+
+.main__contactanos--ubicacion .ubicacion .ubicacion--titulo h3{
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.main__contactanos--ubicacion .ubicacion img{
+    width: 100%;
+}
+
+
+
+.formulario{
+    flex: 1 1 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+
+
+.formulario label{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+
+}
+
+.formulario input{
+    background-color: rgb(197, 194, 194);
+    height: 40px;
+    width: 100%;
+    outline: none;
+}
+
+
+.formulario h4{
+   font-weight: bolder;
+   text-align: center;
+   grid-column: 1/3;
+}
+
+.formulario__nombre {
+    grid-column: 1/2;
+}
+
+.formulario__email{
+    grid-column: 2/3;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+    background-color: rgb(197, 194, 194);
+    width: 100%;
+    grid-column: 1/3;
+}
+
+textarea::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.formulario .boton{
+  background-color: #3101FF;
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .formulario{
+        margin-top: 20px;
+    }
+    .main__contactanos--ubicacion .ubicacion .ubicacion--titulo h3{
+        font-size: 25px;
+    }
+
+     .formulario__nombre {
+         grid-column: 1/-1;
+     }
+     
+     .formulario__email{
+         grid-column: 1/-1;
+     }
+}
+

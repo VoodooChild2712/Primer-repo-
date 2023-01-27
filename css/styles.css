@@ -1,0 +1,70 @@
+* {
+    font-family: 'Fira Code', monospace; !important
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-blue {
+    background-color: #3101FF; !important
+}
+
+.bg-darkblue {
+    background-color: #224C8D;
+}
+
+.bg-darkestblue {
+    background-color: #313E50;
+}
+
+.text-blue {
+    color: #3101FF;
+}
+
+.p-6 {
+    padding: 12px; !important
+}
+
+.mt-10 {
+    margin-top: 70px;
+}
+
+.fs-10 {
+    font-size: 70px;
+}
+
+.fs-20 {
+    font-size: 100px;
+}
+
+.height-layout {
+    height: 950px; !important
+}
+
+.height-login {
+    height: 1013px; !important
+}
+
+.fondo-layout {
+    background-image: url("./img/fondo.png");
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #3101FF;
+    color: #FFFFFF;
+}
+
+@media (max-width: 400px) {
+    .main__title {
+        font-size: 50px;
+    }
+}
